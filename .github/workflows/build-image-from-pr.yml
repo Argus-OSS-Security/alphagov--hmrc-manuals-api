@@ -1,14 +1,15 @@
 name: Build image from PR
 
-on:
-  workflow_dispatch:
-    inputs:
-      gitRef:
-        description: 'Commit, tag or branch name to build from'
-        required: true
-        type: string
-  pull_request:
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#     inputs:
+#       gitRef:
+#         description: 'Commit, tag or branch name to build from'
+#         required: true
+#         type: string
+#   pull_request:
+# 
 jobs:
   build-image-from-PR:
     name: Build image from PR
